@@ -13,6 +13,12 @@ variable "project_name" {
   description = "The subdomain on the *.pages.dev root domain assigned to the Cloudflare Pages project"
 }
 
+variable "create_pages_redirect" {
+  type        = bool
+  default     = false
+  description = "Indicates whether to create a redirect from the *.pages.dev root domain to the custom domain"
+}
+
 variable "email_addresses" {
   type        = list(string)
   default     = []
