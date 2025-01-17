@@ -5,7 +5,7 @@ resource "cloudflare_record" "www" {
   content = "192.0.2.1"
   proxied = true
 
-  depends_on = [cloudflare_ruleset.this]
+  depends_on = [cloudflare_ruleset.www_to_root_redirect]
 }
 
 resource "cloudflare_record" "redirect_to_pages" {
