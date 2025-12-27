@@ -18,15 +18,3 @@ variable "create_pages_redirect" {
   default     = false
   description = "Indicates whether to create a redirect from the *.pages.dev root domain to the custom domain"
 }
-
-variable "email_addresses" {
-  type        = list(string)
-  default     = []
-  description = "A list of email addresses on the custom domain that will be forwarded to the destination email address"
-}
-
-variable "destination_email_address" {
-  type        = string
-  default     = ""
-  description = "The email address to which the configured emails will be forwarded"
-}

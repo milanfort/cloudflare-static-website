@@ -21,19 +21,3 @@ output "project_domain" {
 output "project_domains" {
   value = cloudflare_pages_project.this.domains
 }
-
-output "email_routing" {
-  value = cloudflare_email_routing_settings.this.status
-}
-
-output "email_routing_catch_all" {
-  value = cloudflare_email_routing_catch_all.this.enabled
-}
-
-output "destination_email" {
-  value = cloudflare_email_routing_address.this.email
-}
-
-output "destination_email_verified" {
-  value = cloudflare_email_routing_address.this.verified
-}
